@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/babel.confi.js
+/babel.config.js
 
 # testing
 /coverage
