@@ -1,0 +1,16 @@
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animation';
+@import 'base/utilities';
+@import 'base/utilities';
+
+@import 'components/composition';
+@import 'components/gallery';
+
+@import 'layout/landing';
+@import 'layout/about';
+@import 'layout/education';
+@import 'layout/portofolio';
+@import 'layout/footer';

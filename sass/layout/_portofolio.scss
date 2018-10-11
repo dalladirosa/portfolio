@@ -1,0 +1,46 @@
+.portofolio {
+  padding: 20rem 0;
+  display: flex;
+  // background-image: linear-gradient(90deg, white, $color-primary-dark 100%);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  &__sidebar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 18%;
+    flex: 0 0 18%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    width: 40rem;
+    padding: 0 1rem 0 3rem;
+    border-right: 0.1rem solid $color-primary-dark;
+    & span {
+      width: 8rem;
+      height: 0.4rem;
+      background: $color-primary-dark;
+      display: block;
+      margin-left: 0.3rem;
+      border-radius: 10rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

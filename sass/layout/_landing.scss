@@ -1,0 +1,30 @@
+.landing {
+  position: relative;
+  height: 100vh;
+
+  &__text-box {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+  }
+}
+
+#scroll {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 9%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  -webkit-animation: bounce 1.2s infinite ease;
+  animation: bounce 1.2s infinite ease;
+}

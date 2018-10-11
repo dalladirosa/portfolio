@@ -1,0 +1,43 @@
+// COLOR VARIABLES
+$color-primary: #f9c80e;
+$color-primary-light: #f1ffab;
+$color-primary-dark: #ff7a06;
+
+$color-secondary: #a3f3eb;
+
+$color-grey-light-1: #d7d9d5;
+$color-grey-light-2: #fbfbfb;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+$color-grey-dark-3: #333333;
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// FONT VARIABLES
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
+$font-primary: 'Montserrat', sans-serif;
+$font-display: 'Ubuntu', sans-serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3rem;
+  z-index: 99;
+}
