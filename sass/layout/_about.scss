@@ -3,7 +3,7 @@
   background-color: $color-grey-light-2;
 
   @include respond(tab-port) {
-    padding: 5rem 0 15rem 0;
+    padding: 5rem 3rem 15rem 3rem;
   }
 
   @include respond(phone) {
@@ -28,9 +28,13 @@
   position: relative;
   padding-top: 7rem;
 
-  @include respond(phone) {
-    padding: 3rem 2rem 0 2rem;
+  @include respond(tab-port) {
+    padding: 0 10rem;
   }
+
+  // @include respond(phone) {
+  //   padding: 3rem 2rem 0 2rem;
+  // }
 
   .introducing-text {
     font-size: 2.3rem;
@@ -41,6 +45,11 @@
     text-transform: uppercase;
     transform: rotate(90deg);
 
+    @include respond(tab-port) {
+      font-size: 2rem;
+      top: 7rem;
+      right: -6rem;
+    }
     @include respond(phone) {
       font-size: 2rem;
       top: 7rem;
@@ -63,6 +72,7 @@
 
   @include respond(tab-port) {
     padding: 5rem 0 5rem 0;
+    max-width: 70rem;
   }
 
   @include respond(phone) {
@@ -83,9 +93,10 @@
     right: 39rem;
 
     @include respond(tab-port) {
-      font-size: 3rem;
-      top: 4.4rem;
-      right: 40rem;
+      position: static;
+      text-align: center;
+      display: block;
+      padding-bottom: 2rem;
     }
 
     @include respond(phone) {
@@ -109,20 +120,11 @@
       transition: all 0.2s ease-in-out;
 
       @include respond(tab-port) {
-        margin: -3px 3px;
+        visibility: hidden;
       }
     }
   }
-  .image {
-    padding: 2rem;
 
-    @include respond(tab-port) {
-      padding: 5rem;
-    }
-    @include respond(phone) {
-      padding: 5rem 6rem 0;
-    }
-  }
   &__shape {
     width: 20rem;
     height: 20rem;
@@ -137,10 +139,19 @@
       shape-outside: circle(50% at 50% 50%);
       border-radius: none;
     }
+
+    @include respond(tab-port) {
+      width: 15rem;
+      height: 15rem;
+      margin: 0 auto;
+      float: none;
+    }
+
     @include respond(phone) {
       width: 15rem;
       height: 15rem;
-      transform: translateX(10rem) skewX(0);
+      margin: 0 auto;
+      float: none;
     }
   }
   &__img {

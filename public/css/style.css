@@ -755,7 +755,7 @@ body {
   background-color: #fbfbfb; }
   @media only screen and (max-width: 56.25em) {
     .about {
-      padding: 5rem 0 15rem 0; } }
+      padding: 5rem 3rem 15rem 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .about {
       padding: 5rem 2rem 15rem 2rem; } }
@@ -773,9 +773,9 @@ body {
 .desc {
   position: relative;
   padding-top: 7rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .desc {
-      padding: 3rem 2rem 0 2rem; } }
+      padding: 0 10rem; } }
   .desc .introducing-text {
     font-size: 2.3rem;
     top: 13rem;
@@ -784,6 +784,11 @@ body {
     position: absolute;
     text-transform: uppercase;
     transform: rotate(90deg); }
+    @media only screen and (max-width: 56.25em) {
+      .desc .introducing-text {
+        font-size: 2rem;
+        top: 7rem;
+        right: -6rem; } }
     @media only screen and (max-width: 37.5em) {
       .desc .introducing-text {
         font-size: 2rem;
@@ -799,7 +804,8 @@ body {
   box-shadow: -0.1rem 0px 6.8rem 0.3rem rgba(0, 0, 0, 0.15); }
   @media only screen and (max-width: 56.25em) {
     .bio {
-      padding: 5rem 0 5rem 0; } }
+      padding: 5rem 0 5rem 0;
+      max-width: 70rem; } }
   @media only screen and (max-width: 37.5em) {
     .bio {
       background-image: linear-gradient(45deg, #f9c80e, #ff7a06 33%, white 17%); } }
@@ -812,9 +818,10 @@ body {
     right: 39rem; }
     @media only screen and (max-width: 56.25em) {
       .bio-heading {
-        font-size: 3rem;
-        top: 4.4rem;
-        right: 40rem; } }
+        position: static;
+        text-align: center;
+        display: block;
+        padding-bottom: 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .bio-heading {
         font-size: 3rem;
@@ -835,15 +842,7 @@ body {
       transition: all 0.2s ease-in-out; }
       @media only screen and (max-width: 56.25em) {
         .bio-heading::after {
-          margin: -3px 3px; } }
-  .bio .image {
-    padding: 2rem; }
-    @media only screen and (max-width: 56.25em) {
-      .bio .image {
-        padding: 5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .bio .image {
-        padding: 5rem 6rem 0; } }
+          visibility: hidden; } }
   .bio__shape {
     width: 20rem;
     height: 20rem;
@@ -858,11 +857,18 @@ body {
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         border-radius: none; } }
+    @media only screen and (max-width: 56.25em) {
+      .bio__shape {
+        width: 15rem;
+        height: 15rem;
+        margin: 0 auto;
+        float: none; } }
     @media only screen and (max-width: 37.5em) {
       .bio__shape {
         width: 15rem;
         height: 15rem;
-        transform: translateX(10rem) skewX(0); } }
+        margin: 0 auto;
+        float: none; } }
   .bio__img {
     height: 100%;
     transform: scale(1.5);
