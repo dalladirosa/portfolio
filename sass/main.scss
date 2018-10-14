@@ -1,13 +1,15 @@
 @import 'abstracts/mixins';
+@import 'abstracts/ms-portfolio-carousel';
 
 @import 'base/base';
 @import 'base/typography';
 @import 'base/animation';
 @import 'base/utilities';
-@import 'base/utilities';
+@import 'base/grid';
 
 @import 'components/composition';
 @import 'components/gallery';
+@import 'components/wave';
 
 @import 'layout/landing';
 @import 'layout/about';

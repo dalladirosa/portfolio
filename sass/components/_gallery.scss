@@ -18,16 +18,16 @@
   // Slides images
   .ms-slide {
     &:nth-child(1) .ms-slide__image {
-      background-image: url('../../img/KejarKeringat.PNG');
+      background-image: url('../../public/img/KejarKeringat.PNG');
     }
     &:nth-child(2) .ms-slide__image {
-      background-image: url('../../img/BosDuren.PNG');
+      background-image: url('../../public/img/BosDuren.PNG');
     }
     &:nth-child(3) .ms-slide__image {
-      background-image: url('../../img/Traclorie.PNG');
+      background-image: url('../../public/img/Traclorie.PNG');
     }
     &:nth-child(4) .ms-slide__image {
-      background-image: url('../../img/devconnector.PNG');
+      background-image: url('../../public/img/devconnector.PNG');
     }
   }
   .ms-slide__image-container {

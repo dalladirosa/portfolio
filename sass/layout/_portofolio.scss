@@ -1,20 +1,14 @@
 .portofolio {
   padding: 20rem 0;
   display: flex;
-  // background-image: linear-gradient(90deg, white, $color-primary-dark 100%);
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url(../img/nat-4.jpg);
+    url(../../public/img/nat-6.jpg);
   background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -10rem;
-
-  & > * {
-    transform: skewY(7deg);
-  }
+  position: relative;
 
   &__sidebar {
     -webkit-box-flex: 0;

@@ -1,0 +1,22 @@
+.wave {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  transform: rotate(180deg);
+  color: $color-grey-light-2;
+  top: -1.5rem;
+
+  &--bottom {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    color: white;
+    bottom: -1.5rem;
+  }
+}
+.wave svg {
+  fill: currentColor;
+  width: 102%;
+  margin-left: -1%;
+  height: auto;
+}

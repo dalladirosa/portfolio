@@ -13,6 +13,11 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      // letter-spacing: 1rem;
+      font-size: 3.5rem;
+    }
   }
 
   &--sub {
@@ -26,6 +31,10 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     animation: moveInBottom 1s ease-in;
+
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
   }
 }
 .heading-secondary {
