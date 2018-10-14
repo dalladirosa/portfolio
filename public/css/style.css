@@ -590,7 +590,11 @@ body {
       margin-right: 6rem; }
       @media only screen and (max-width: 56.25em) {
         .row [class^='col-']:not(:last-child) {
-          margin-right: 0; } }
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^='col-'] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -769,6 +773,9 @@ body {
 .desc {
   position: relative;
   padding-top: 7rem; }
+  @media only screen and (max-width: 37.5em) {
+    .desc {
+      padding: 3rem 2rem 0 2rem; } }
   .desc .introducing-text {
     font-size: 2.3rem;
     top: 13rem;
@@ -777,6 +784,11 @@ body {
     position: absolute;
     text-transform: uppercase;
     transform: rotate(90deg); }
+    @media only screen and (max-width: 37.5em) {
+      .desc .introducing-text {
+        font-size: 2rem;
+        top: 7rem;
+        right: -6rem; } }
 
 .bio {
   position: relative;
@@ -787,11 +799,10 @@ body {
   box-shadow: -0.1rem 0px 6.8rem 0.3rem rgba(0, 0, 0, 0.15); }
   @media only screen and (max-width: 56.25em) {
     .bio {
-      max-width: 100rem;
       padding: 5rem 0 5rem 0; } }
   @media only screen and (max-width: 37.5em) {
     .bio {
-      background-image: linear-gradient(45deg, #f9c80e, #ff7a06 39%, white 39%); } }
+      background-image: linear-gradient(45deg, #f9c80e, #ff7a06 33%, white 17%); } }
   .bio-heading {
     position: absolute;
     font-family: "Montserrat", sans-serif;
@@ -807,8 +818,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .bio-heading {
         font-size: 3rem;
-        top: 3.4rem;
-        right: 23rem; } }
+        top: 25rem;
+        right: 17rem; } }
     .bio-heading::after {
       content: '';
       width: 50px;
@@ -851,7 +862,7 @@ body {
       .bio__shape {
         width: 15rem;
         height: 15rem;
-        transform: translateX(-3rem) skewX(0); } }
+        transform: translateX(10rem) skewX(0); } }
   .bio__img {
     height: 100%;
     transform: scale(1.5);
