@@ -15,7 +15,7 @@
   font-size: 1.6rem;
 
   @include respond(phone) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -30,6 +30,10 @@
 
   @include respond(tab-port) {
     padding: 0 10rem;
+  }
+
+  @include respond(phone) {
+    padding: 0 5rem;
   }
 
   // @include respond(phone) {
