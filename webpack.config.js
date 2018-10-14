@@ -1,9 +1,8 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
   entry: {
-    index: ['@babel/polyfill', './src/index.js']
+    index: ['@babel/polyfill', './public/src/index.js']
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
