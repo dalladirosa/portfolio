@@ -10,6 +10,14 @@
   background-size: cover;
   position: relative;
 
+  @include respond(tab-port) {
+    display: block;
+  }
+
+  // @include respond(phone) {
+  //   padding: 5rem 2rem 15rem 2rem;
+  // }
+
   &__sidebar {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 18%;
@@ -35,6 +43,16 @@
       margin-left: 0.3rem;
       border-radius: 10rem;
       margin-bottom: 3rem;
+
+      @include respond(tab-port) {
+        margin: 0 auto 3rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: auto;
+      text-align: center;
+      padding: 0 3rem 0 3rem;
     }
   }
 }

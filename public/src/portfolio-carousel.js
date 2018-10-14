@@ -34,16 +34,16 @@
   })
 
   // Initializing the links slider
-  var msLinks = new MomentumSlider({
-    el: slidersContainer,
-    cssClass: 'ms--links',
-    range: [0, 3],
-    rangeContent: function() {
-      return '<a class="ms-slide__link">View Case</a>'
-    },
-    vertical: true,
-    interactive: false
-  })
+  // var msLinks = new MomentumSlider({
+  //   el: slidersContainer,
+  //   cssClass: 'ms--links',
+  //   range: [0, 3],
+  //   rangeContent: function() {
+  //     return '<a class="ms-slide__link">View Case</a>'
+  //   },
+  //   vertical: true,
+  //   interactive: false
+  // })
 
   // Get pagination items
   var pagination = document.querySelector('.pagination')
@@ -61,7 +61,7 @@
       return '<div class="ms-slide__image-container"><div class="ms-slide__image"></div></div>'
     },
     // Syncronize the other sliders
-    sync: [msNumbers, msTitles, msLinks],
+    sync: [msNumbers, msTitles],
     // Styles to interpolate as we move the slider
     style: {
       '.ms-slide__image': {

@@ -29,14 +29,6 @@
   left: calc(50% - 280px); }
   .ms--images.ms-container--horizontal .ms-track {
     left: -70px; }
-  .ms--images .ms-slide:nth-child(1) .ms-slide__image {
-    background-image: url("../portfolio-carousel/img/harvey-gibson-498362-unsplash.jpg"); }
-  .ms--images .ms-slide:nth-child(2) .ms-slide__image {
-    background-image: url("../portfolio-carousel/img/andre-hunter-461305-unsplash.jpg"); }
-  .ms--images .ms-slide:nth-child(3) .ms-slide__image {
-    background-image: url("../portfolio-carousel/img/joanna-nix-389128-unsplash.jpg"); }
-  .ms--images .ms-slide:nth-child(4) .ms-slide__image {
-    background-image: url("../portfolio-carousel/img/jurica-koletic-321003-unsplash.jpg"); }
   .ms--images .ms-slide__image-container {
     width: 80%;
     height: 80%;
@@ -252,12 +244,23 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box; }
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   padding: 3rem;
-  z-index: 99; }
+  box-sizing: border-box; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -272,6 +275,9 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 3.5rem; } }
   .heading-primary--sub {
     font-size: 4.6rem;
     font-weight: 600;
@@ -279,6 +285,9 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     animation: moveInBottom 1s ease-in; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 3.5rem; } }
 
 .heading-secondary {
   font-size: 5.5rem;
@@ -318,6 +327,11 @@ body {
   background-image: linear-gradient(135deg, #ff7a06, #f9c80e);
   -webkit-background-clip: text;
   color: transparent; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-portofolio {
+      margin: 0 auto; }
+      .heading-portofolio br {
+        display: none; } }
 
 @keyframes moveInLeft {
   0% {
@@ -369,68 +383,15 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important; }
-
-.container {
-  width: 970px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
-      .row:not(:last-child) {
-        margin-bottom: 6rem; } }
   @media only screen and (max-width: 56.25em) {
-    .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
-  .row::after {
-    content: '';
-    display: table;
-    clear: both; }
-  .row [class^='col-'] {
-    float: left; }
-    .row [class^='col-']:not(:last-child) {
-      margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
-        .row [class^='col-']:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .row [class^='col-'] {
-        width: 100% !important; } }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
-  .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
-  .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
-  .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
-
-.u-center-text {
-  text-align: center !important; }
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
-
-.u-margin-bottom-medium {
-  margin-bottom: 4rem !important; }
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
 
 .container {
   width: 970px;
@@ -521,13 +482,13 @@ body {
   .ms--images.ms-container--horizontal .ms-track {
     left: -70px; }
   .ms--images .ms-slide:nth-child(1) .ms-slide__image {
-    background-image: url("../../img/KejarKeringat.PNG"); }
+    background-image: url("../../public/img/KejarKeringat.PNG"); }
   .ms--images .ms-slide:nth-child(2) .ms-slide__image {
-    background-image: url("../../img/BosDuren.PNG"); }
+    background-image: url("../../public/img/BosDuren.PNG"); }
   .ms--images .ms-slide:nth-child(3) .ms-slide__image {
-    background-image: url("../../img/Traclorie.PNG"); }
+    background-image: url("../../public/img/Traclorie.PNG"); }
   .ms--images .ms-slide:nth-child(4) .ms-slide__image {
-    background-image: url("../../img/devconnector.PNG"); }
+    background-image: url("../../public/img/devconnector.PNG"); }
   .ms--images .ms-slide__image-container {
     width: 80%;
     height: 80%;
@@ -574,6 +535,26 @@ body {
 .pagination__item--active .pagination__button:after {
   opacity: 1; }
 
+.wave {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  transform: rotate(180deg);
+  color: #fbfbfb;
+  top: -1.5rem; }
+  .wave--bottom {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    color: white;
+    bottom: -1.5rem; }
+
+.wave svg {
+  fill: currentColor;
+  width: 102%;
+  margin-left: -1%;
+  height: auto; }
+
 .landing {
   position: relative;
   height: 100vh; }
@@ -604,9 +585,18 @@ body {
 .about {
   padding: 10rem 0 25rem 0;
   background-color: #fbfbfb; }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      padding: 5rem 3rem 15rem 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      padding: 5rem 2rem 15rem 2rem; } }
 
 .paragraph {
   font-size: 1.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .paragraph {
+      font-size: 1.5rem; } }
 
 .img-box {
   display: block;
@@ -615,6 +605,12 @@ body {
 .desc {
   position: relative;
   padding-top: 7rem; }
+  @media only screen and (max-width: 56.25em) {
+    .desc {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .desc {
+      padding: 0 5rem; } }
   .desc .introducing-text {
     font-size: 2.3rem;
     top: 13rem;
@@ -623,6 +619,16 @@ body {
     position: absolute;
     text-transform: uppercase;
     transform: rotate(90deg); }
+    @media only screen and (max-width: 56.25em) {
+      .desc .introducing-text {
+        font-size: 2rem;
+        top: 7rem;
+        right: -6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .desc .introducing-text {
+        font-size: 2rem;
+        top: 7rem;
+        right: -6rem; } }
 
 .bio {
   position: relative;
@@ -631,6 +637,13 @@ body {
   background-image: linear-gradient(45deg, #f9c80e, #ff7a06 43%, white 40%);
   background-size: 100%;
   box-shadow: -0.1rem 0px 6.8rem 0.3rem rgba(0, 0, 0, 0.15); }
+  @media only screen and (max-width: 56.25em) {
+    .bio {
+      padding: 5rem 0 5rem 0;
+      max-width: 70rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .bio {
+      background-image: linear-gradient(45deg, #f9c80e, #ff7a06 33%, white 17%); } }
   .bio-heading {
     position: absolute;
     font-family: "Montserrat", sans-serif;
@@ -638,6 +651,17 @@ body {
     font-size: 4rem;
     top: 4.4rem;
     right: 39rem; }
+    @media only screen and (max-width: 56.25em) {
+      .bio-heading {
+        position: static;
+        text-align: center;
+        display: block;
+        padding-bottom: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .bio-heading {
+        font-size: 3rem;
+        top: 25rem;
+        right: 17rem; } }
     .bio-heading::after {
       content: '';
       width: 50px;
@@ -651,8 +675,9 @@ body {
       -moz-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
-  .bio .image {
-    padding: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .bio-heading::after {
+          visibility: hidden; } }
   .bio__shape {
     width: 20rem;
     height: 20rem;
@@ -667,9 +692,18 @@ body {
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         border-radius: none; } }
+    @media only screen and (max-width: 56.25em) {
+      .bio__shape {
+        width: 15rem;
+        height: 15rem;
+        margin: 0 auto;
+        float: none; } }
     @media only screen and (max-width: 37.5em) {
       .bio__shape {
-        transform: translateX(-3rem) skewX(0); } }
+        width: 15rem;
+        height: 15rem;
+        margin: 0 auto;
+        float: none; } }
   .bio__img {
     height: 100%;
     transform: scale(1.5);
@@ -707,7 +741,7 @@ body {
   margin: 19rem 20rem;
   box-shadow: -0.1rem 0px 6.8rem 0.3rem rgba(0, 0, 0, 0.15); }
   .education__sidebar {
-    background-image: linear-gradient(to right bottom, rgba(241, 255, 171, 0.8), rgba(255, 122, 6, 0.8)), url(../../img/nat-6.jpg);
+    background-image: linear-gradient(to right bottom, rgba(241, 255, 171, 0.8), rgba(255, 122, 6, 0.8)), url(../../public/img/nat-6.jpg);
     background-size: cover;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 18%;
@@ -843,12 +877,12 @@ body {
 .portofolio {
   padding: 20rem 0;
   display: flex;
-  background-image: linear-gradient(to right bottom, rgba(241, 255, 171, 0.8), rgba(255, 122, 6, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(241, 255, 171, 0.8), rgba(255, 122, 6, 0.8)), url(../../public/img/nat-6.jpg);
   background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -10rem; }
-  .portofolio > * {
-    transform: skewY(7deg); }
+  position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .portofolio {
+      display: block; } }
   .portofolio__sidebar {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 18%;
@@ -874,6 +908,14 @@ body {
       margin-left: 0.3rem;
       border-radius: 10rem;
       margin-bottom: 3rem; }
+      @media only screen and (max-width: 56.25em) {
+        .portofolio__sidebar span {
+          margin: 0 auto 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .portofolio__sidebar {
+        width: auto;
+        text-align: center;
+        padding: 0 3rem 0 3rem; } }
 
 .footer {
   background-color: #333333;
